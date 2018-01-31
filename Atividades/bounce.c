@@ -21,9 +21,6 @@ float ySpeed = 5;
 float xSize = 100;
 float ySize = 50;
 
-void timerUp(int value);
-void timerDown(int value);
-
 // Função callback chamada para fazer o desenho
 void draw(void)
 {
