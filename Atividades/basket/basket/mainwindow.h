@@ -32,6 +32,8 @@ private slots:
 
     void on_lineS_valueChanged(double arg1);
 
+    void on_pushButton_2_pressed();
+
 private:
     Ui::MainWindow *ui;
 };

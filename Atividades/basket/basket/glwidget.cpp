@@ -70,6 +70,11 @@ void GLWidget::initializeGL()
 
 void GLWidget::paintGL()
 {
+    if(reset){
+        countPonto = 0;
+        reset = false;
+    }
+
     lineSize = lineS;
     glClearColor((float) backColorR/255.0, (float) backColorG/255.0, (float) backColorB/255.0, 1.0);
 

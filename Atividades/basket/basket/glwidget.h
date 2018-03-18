@@ -19,6 +19,7 @@ public:
     int backColorR, backColorG, backColorB;
     int lineS = 1;
     bool bresenham;
+    bool reset;
 
 private:
     QTimer timer;

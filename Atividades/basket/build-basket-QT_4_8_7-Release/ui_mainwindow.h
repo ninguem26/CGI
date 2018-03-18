@@ -63,6 +63,7 @@ public:
     QDoubleSpinBox *lineS;
     QSpacerItem *horizontalSpacer;
     QCheckBox *checkBox;
+    QPushButton *pushButton_2;
     QSpacerItem *verticalSpacer;
     QPushButton *pushButton;
     GLWidget *GLwidget;
@@ -247,6 +248,11 @@ public:
 
         verticalLayout->addWidget(checkBox);
 
+        pushButton_2 = new QPushButton(centralWidget);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+
+        verticalLayout->addWidget(pushButton_2);
+
         verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         verticalLayout->addItem(verticalSpacer);
@@ -269,6 +275,7 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(GLwidget->sizePolicy().hasHeightForWidth());
         GLwidget->setSizePolicy(sizePolicy);
+        GLwidget->setMaximumSize(QSize(500, 500));
 
         horizontalLayout->addWidget(GLwidget);
 
@@ -296,6 +303,7 @@ public:
         label_5->setText(QApplication::translate("MainWindow", "B", 0, QApplication::UnicodeUTF8));
         label_9->setText(QApplication::translate("MainWindow", "Size", 0, QApplication::UnicodeUTF8));
         checkBox->setText(QApplication::translate("MainWindow", "Bresenham", 0, QApplication::UnicodeUTF8));
+        pushButton_2->setText(QApplication::translate("MainWindow", "Limpar Arquibancadas", 0, QApplication::UnicodeUTF8));
         pushButton->setText(QApplication::translate("MainWindow", "Quit", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 

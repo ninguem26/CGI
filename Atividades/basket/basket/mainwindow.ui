@@ -216,6 +216,13 @@
          </widget>
         </item>
         <item>
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="text">
+           <string>Limpar Arquibancadas</string>
+          </property>
+         </widget>
+        </item>
+        <item>
          <spacer name="verticalSpacer">
           <property name="orientation">
            <enum>Qt::Vertical</enum>
@@ -247,8 +254,12 @@
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
-      <zorder></zorder>
-      <zorder></zorder>
+      <property name="maximumSize">
+       <size>
+        <width>500</width>
+        <height>500</height>
+       </size>
+      </property>
      </widget>
     </item>
    </layout>

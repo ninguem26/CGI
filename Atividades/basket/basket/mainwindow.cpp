@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <stdio.h>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -51,4 +52,10 @@ void MainWindow::on_backB_valueChanged(double arg1)
 void MainWindow::on_lineS_valueChanged(double arg1)
 {
     this->ui->GLwidget->lineS = arg1;
+}
+
+void MainWindow::on_pushButton_2_pressed()
+{
+    printf("Checked");
+    this->ui->GLwidget->reset = true;
 }
